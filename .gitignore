@@ -1,1 +1,42 @@
-.venv
+# Python bytecode files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Distribution and packaging
+*.egg
+*.egg-info/
+dist/
+build/
+*.tar.gz
+*.zip
+
+# Python test/cache
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.tox
+*.nox
+*.coverage.*
+*.hypothesis/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# PyInstaller
+# Uncomment if you have a `build` folder for pyinstaller
+# build/
