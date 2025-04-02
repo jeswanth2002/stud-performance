@@ -1,0 +1,16 @@
+[ 2025-04-03 02:52:59,888 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2025-04-03 02:52:59,897 ] 97 werkzeug - INFO -  * Debugger PIN: 820-338-904
+[ 2025-04-03 02:53:03,364 ] 35 root - INFO - user has provided input data
+[ 2025-04-03 02:53:03,482 ] 17 root - INFO - preprocessor loaded succesfully
+[ 2025-04-03 02:53:03,504 ] 97 werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 02:53:03] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[ 2025-04-03 02:53:03,608 ] 97 werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 02:53:03] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2025-04-03 02:53:03,612 ] 97 werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 02:53:03] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2025-04-03 02:53:03,632 ] 97 werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 02:53:03] "GET /predict?__debugger__=yes&cmd=resource&f=console.png&s=ywopNxiPaATGxMGtY9wz HTTP/1.1" 200 -
+[ 2025-04-03 02:53:03,643 ] 97 werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 02:53:03] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2025-04-03 02:53:08,807 ] 35 root - INFO - user has provided input data
+[ 2025-04-03 02:53:08,808 ] 17 root - INFO - preprocessor loaded succesfully
+[ 2025-04-03 02:53:08,830 ] 97 werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 02:53:08] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[ 2025-04-03 02:53:08,852 ] 97 werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 02:53:08] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2025-04-03 02:53:08,855 ] 97 werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 02:53:08] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2025-04-03 02:53:08,886 ] 97 werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 02:53:08] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png&s=ywopNxiPaATGxMGtY9wz HTTP/1.1[0m" 304 -
+[ 2025-04-03 02:53:08,911 ] 97 werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 02:53:08] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -

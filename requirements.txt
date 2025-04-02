@@ -3,4 +3,6 @@ pandas
 seaborn
 scikit-learn
 dill
+requests
+flask
 -e .
