@@ -1,4 +1,3 @@
-from site import execsitecustomize
 import sys
 from src.custom_exception import CustomException
 from src.custom_logger import logging
@@ -12,8 +11,6 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.impute import SimpleImputer
 
-from src.components.data_ingestion import DataIngestionConfig
-from src.components.data_ingestion import DataIngestion
 
 @dataclass
 class DataTransformationConfig:
@@ -35,7 +32,6 @@ class DataTransformation:
                     ('scaler', StandardScaler())
                 ]
             )
-            logging.info('Numerical columns scaling completed', numerical_columns)
             categorical_pipeline = Pipeline(
                 steps=[
                     ('imputer', SimpleImputer(strategy='most_frequent')),
@@ -43,9 +39,8 @@ class DataTransformation:
                     ('scaler', StandardScaler(with_mean=False))
                 ]
             )
-            logging.info('Categorical columns scaling completed', categorical_columns)
             preprocessor = ColumnTransformer(
-                transformers=[
+                [
                     ('numerical_pipeline', numerical_pipeline, numerical_columns),
                     ('categorical_pipeline', categorical_pipeline, categorical_columns)
                 ]
@@ -80,18 +75,10 @@ class DataTransformation:
             save_object(file_path=self.data_transformation_config.preprocessor_obj_file_path, obj=preprocessor_obj)
             logging.info('Preprocessor object saved successfully')
             return (train_arr, test_arr, self.data_transformation_config.preprocessor_obj_file_path)
+        
         except Exception as e:
             raise CustomException(e,sys)
         
-
-if __name__=="__main__":
-    obj=DataIngestion()
-    data_ingestion_artifact=obj.initiate_data_ingestion()
-    train_data=data_ingestion_artifact.train_data_path
-    test_data=data_ingestion_artifact.test_data_path
-    data_transformation=DataTransformation()
-    data_transformation.initiate_data_transformation(train_data,test_data)
-
 
 
         

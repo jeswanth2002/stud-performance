@@ -1,0 +1,10 @@
+[ 2025-04-02 23:34:41,498 ] 23 root - INFO - Data Ingestion method starts
+[ 2025-04-02 23:34:41,502 ] 26 root - INFO - Dataset read as pandas dataframe
+[ 2025-04-02 23:34:41,506 ] 31 root - INFO - Train test split initiated
+[ 2025-04-02 23:34:41,513 ] 38 root - INFO - Ingestion of data is completed
+[ 2025-04-02 23:34:41,532 ] 61 root - INFO - Reading train and test data completed
+[ 2025-04-02 23:34:41,532 ] 51 root - INFO - Preprocessor object created successfully
+[ 2025-04-02 23:34:41,533 ] 70 root - INFO - Train and test data split into input and target features
+[ 2025-04-02 23:34:41,549 ] 76 root - INFO - Data transformation completed successfully
+[ 2025-04-02 23:34:41,553 ] 13 root - INFO - Object saved at resources\preprocessor.pkl
+[ 2025-04-02 23:34:41,553 ] 79 root - INFO - Preprocessor object saved successfully

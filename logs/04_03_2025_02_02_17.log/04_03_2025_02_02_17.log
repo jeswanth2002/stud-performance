@@ -1,0 +1,14 @@
+[ 2025-04-03 02:02:19,179 ] 30 root - INFO - Data Ingestion method starts
+[ 2025-04-03 02:02:19,188 ] 33 root - INFO - Dataset read as pandas dataframe
+[ 2025-04-03 02:02:19,193 ] 38 root - INFO - Train test split initiated
+[ 2025-04-03 02:02:19,204 ] 45 root - INFO - Ingestion of data is completed
+[ 2025-04-03 02:02:19,224 ] 59 root - INFO - Reading train and test data completed
+[ 2025-04-03 02:02:19,224 ] 49 root - INFO - Preprocessor object created successfully
+[ 2025-04-03 02:02:19,227 ] 68 root - INFO - Train and test data split into input and target features
+[ 2025-04-03 02:02:19,242 ] 74 root - INFO - Data transformation completed successfully
+[ 2025-04-03 02:02:19,245 ] 15 root - INFO - Object saved at resources\preprocessor.pkl
+[ 2025-04-03 02:02:19,245 ] 77 root - INFO - Preprocessor object saved successfully
+[ 2025-04-03 02:02:19,245 ] 29 root - INFO - starting the model trainer
+[ 2025-04-03 02:02:19,954 ] 51 root - INFO - Best model found is LinearRegression with score 0.8804332983749565
+[ 2025-04-03 02:02:19,955 ] 15 root - INFO - Object saved at resources\model.pkl
+[ 2025-04-03 02:02:19,955 ] 56 root - INFO - Model training completed successfully
